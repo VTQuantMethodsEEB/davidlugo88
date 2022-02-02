@@ -1,0 +1,23 @@
+VACs<-read.csv("VACs_Compiled_Station_Data.csv")
+
+head(VACs)
+
+VACs[VACs$Species=="Bobcat",]
+View(VACs[VACs$Species=="Bobcat",])
+
+unique(VACs$Date)
+VACs$Date=as.Date(VACs$Date, "%m/%d/%Y") 
+
+names(VACs)
+VACs$Species=as.factor(toupper(VACs$Species)) 
+names(VACs)
+VACs$tally=1
+
+view(VACs)
+
+f1=aggregate(tally~Trophic.Level+Date+Species,FUN=sum,data=VACs)
+or
+f1=aggregate(tally~Trophic.Level+Date+Species,FUN=mean,data=VACs)
+
+f1=f1[order(f1$Trophic,f1$Date),];f1 
+head(f1)
