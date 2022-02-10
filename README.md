@@ -13,3 +13,8 @@ Here, I explored R and some basic calculations with my VACS dataset.
 CODE:week2_david_lugo
 DATA:VACs_Compiled_Station_Data.csv
 Here, I input my data in tidy format and explored some tidyverse functions within my data. 
+
+##Week 3##
+Code: week3_david_lugo
+DATA:VACs_Compiled_Station_Data.csv
+Here, I input my data into ggplot2 and created a boxplot graph.
