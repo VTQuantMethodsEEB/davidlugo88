@@ -18,3 +18,9 @@ The data I will be using throughout the semester is from the Virginia Appalachia
 - Code: week3_david_lugo
 - DATA:VACs_Compiled_Station_Data.csv
 - Here, I input my data into ggplot2 and created a boxplot graph.
+
+# Week 5 #
+-Code: week5_david_lugo
+-DATA: Example_NEW_VACS_Data.csv
+-Hyp 1: The mean duration time is different between secondary and tertiary consumer trophic levels. Used permutation test.
+-Hyp 2: The mean duration time of tertiary consumers is higher than that of secondary consumers. Used True student T-test.
