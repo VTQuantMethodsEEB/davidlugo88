@@ -13,7 +13,10 @@ secondary<-c(0:00:01, 0:00:01, 0:00:01, 0:00:01, 0:00:12, 0:00:14, 0:04:20, 0:00
                       0:04:52, 0:00:01, 0:00:01, 0:06:01, 0:01:34, 0:00:01, 0:00:12, 0:00:01, 0:01:32, 0:01:34, 0:00:01, 0:00:01, 0:00:01, 0:00:13, 0:01:55, 0:05:12,
                       0:00:01, 0:00:01, 0:00:01, 0:00:01, 0:00:01, 0:00:01, 0:01:30, 0:00:01, 0:01:34, 0:01:23, 0:00:01, 0:00:01, 0:00:01, 0:01:20, 0:00:01, 0:00:01, 0:03:01, 0:02:32)
 tertiary<-c(0:02:37, 0:00:01, 0:00:01, 0:00:01, 0:22:17, 0:01:38, 0:00:33, 0:00:18, 0:00:01, 0:00:01, 0:00:18, 0:03:46, 0:00:01, 0:00:01, 0:48:13, 0:00:01, 0:00:01, 0:00:15, 0:00:01, 0:00:01, 0:05:23, 0:08:53, 0:01:57, 0:00:01, 0:01:45, 0:15:00, 0:00:01, 0:00:25, 0:11:30, 0:00:01, 0:00:01, 0:17:17, 0:00:01, 0:00:01, 0:26:41, 0:11:09, 0:34:38, 0:57:26, 0:10:27, 0:08:01, 0:03:49, 0:00:01, 0:02:22, 0:29:20, 0:02:44, 0:03:02, 0:02:34, 0:00:01, 0:00:01, 0:00:11, 0:00:01, 0:01:23, 0:29:07, 0:34:07, 0:44:15, 0:01:27, 0:05:24, 0:10:08, 0:08:59, 0:15:27, 0:00:01, 0:03:46, 0:27:58, 0:00:01, 0:09:29, 0:00:01, 0:00:01, 0:07:48, 0:06:56, 0:19:13, 0:09:55, 0:00:01, 0:01:43, 0:11:36, 0:15:32, 0:06:23, 0:15:37, 0:04:49, 0:00:01, 0:02:44, 0:19:39, 0:00:01, 0:00:01, 0:00:01, 0:28:40, 0:00:01, 0:00:01, 0:03:15, 0:02:32, 0:01:59, 0:01:24, 0:02:32)
-mean(secondary) - mean(tertiary)
+
+
+obs  = mean(tertiary)-mean(secondary)
+obs
 
 #created data frame (trophic.levels) and separated trophic levels by time
 trophic.levels <- data.frame(
@@ -53,10 +56,10 @@ for (i in 1:10000) {
   secondaryboot <- trophic.levelboot[1:length(secondary)] #assign the first 680 durations to secondaryboot
   tertiaryboot <- trophic.levelboot[(length(tertiary)+1):length(trophic.levelboot)] #assign the rest of duration to tertiaryboot
   #compute/store difference in means
-  res[i] <- mean(secondaryboot)-mean(tertiaryboot) 
-
+  res[i] <- mean(tertiaryboot)-mean(secondaryboot) 
+}
 #observed mean difference
-obs <- mean(secondary)-mean(tertiary)
+obs  = mean(tertiary)-mean(secondary)
 obs
 
 #histogram for data dsitribution
@@ -66,7 +69,7 @@ abline(v=obs,col="red")
 #how to calc p-val?
 res[res>=obs]
 length(res[res>=obs]) ##gets 10000 in length for the 10000 iterations making the p-value 1...is my length correct?
-10000/10000
+0/10000
 mean(res>=obs)        
 ##My p-value is 1??
 
