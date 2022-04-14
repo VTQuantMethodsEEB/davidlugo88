@@ -29,3 +29,15 @@ The data I will be using throughout the semester is from the Virginia Appalachia
 -Code: week7_david_lugo.R and week8_david_lugo.R
 -DATA: Example_NEW_VACS_Data_1d.csv
 - Created a single variable LM for week7 and created two (one additive,one interactive multivariable LMs)
+
+# Week 10#
+-Code: week10_davidlugo.R
+-DATA: Completed_VACS_Data_2019-2020_1a.csv
+-File: LUGO_week10_glm_results
+-Tested a additive multi-variable GLM and wrote a results statement for output.
+
+# Week 11#
+-Code: week11_davidlugo.R
+-DATA: Completed_VACS_Data_2019-2020_1a.csv
+-File: LUGO_week11_synthesis
+-Tested 4 different GLMs: 1 additive, 1 interactive, and 2 single variable. Wrote synthesis statement.
