@@ -41,3 +41,12 @@ The data I will be using throughout the semester is from the Virginia Appalachia
 -DATA: Completed_VACS_Data_2019-2020_1a.csv
 -File: LUGO_week11_synthesis
 -Tested 4 different GLMs: 1 additive, 1 interactive, and 2 single variable. Wrote synthesis statement.
+
+# Week 12#
+-Code: week12_davidlugo.R
+-DATA: Completed_VACS_Data_2019-2020_1a.csv
+-File: LUGO_week12_glmer_results
+-Tested a a single GLMER and wrote a results statement about output.
+
+
+
