@@ -34,6 +34,7 @@ hist(resid(mod_1)) #histogram of plotted values
 
 shapiro.test(resid(mod_1)) #shapiro wilks test
 #p=2.2e-06 is normal
+##the opposite - not normal!
 hist(VACS$Duration3)
 
 ###ggplot###
